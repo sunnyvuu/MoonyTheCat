@@ -20,3 +20,37 @@ a {
     height: 100vh;
     z-index: -1;
 }
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+nav {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+        width: 3em;
+        margin-top: -.6em;
+        cursor: pointer;
+    }
+}
+
+section.hero {
+    color: white;
+    height: 90vh;
+
+    svg {
+        stroke: white;
+        position: absolute;
+        bottom: 2em;
+        width: 1em;
+         
+        path {
+            fill: white;
+        }
+    }
+}
