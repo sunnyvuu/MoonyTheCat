@@ -40,6 +40,16 @@ header svg {
   cursor: pointer;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead {
+  font-size: 1.4rem;
+}
+
 section.hero {
   color: white;
   height: 90vh;

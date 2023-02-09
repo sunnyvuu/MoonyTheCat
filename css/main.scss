@@ -25,9 +25,11 @@ a {
     color: white;
     font-weight: bold;
 }
+
 nav {
     display: none;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +39,16 @@ header {
         margin-top: -.6em;
         cursor: pointer;
     }
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+}
+
+.subhead {
+    font-size: 1.4rem; 
 }
 
 section.hero {
