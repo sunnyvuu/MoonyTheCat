@@ -140,7 +140,7 @@ img {
 
     nav {
         transform: translateX(0);
-        position: unfixed;
+        position: unset;
         display: block;
         width: auto;
         height: auto;
@@ -149,24 +149,53 @@ img {
         svg.close {
             display: none;
         }
+
+        ul {
+            display: flex;
+            margin: 0;
+
+            a {
+                color: white;
+                padding: .5em 1.5em;
+                font-size: .9rem;
+
+                &:hover {
+                    background: none;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
-    ul {
-        position: static;
-        top: 0;
-        display: flex;
-        margin: 0;
+    .hero-img {
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+    }
 
-        a {
-            //font-weight: bold;
-            color: white;
-            padding: .5em 1.5em;
-            font-size: .9rem;
+    .logo {
+        color: black;
 
-            &:hover {
-                background: none;
-                text-decoration: underline;
+        span {
+            color: #e49797;
+        }
+    }
+
+    section.hero {
+        color: black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 8em;
+
+        svg.down-arrow {
+            stroke:#e49797;
+            position: unset;
+    
+            path {
+                fill: #e49797;
             }
         }
     }
 }
+

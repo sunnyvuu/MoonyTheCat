@@ -124,7 +124,7 @@ img {
   }
   nav {
     transform: translateX(0);
-    position: unfixed;
+    position: unset;
     display: block;
     width: auto;
     height: auto;
@@ -133,19 +133,42 @@ img {
   nav svg.close {
     display: none;
   }
-  ul {
-    position: static;
-    top: 0;
+  nav ul {
     display: flex;
     margin: 0;
   }
-  ul a {
+  nav ul a {
     color: white;
     padding: 0.5em 1.5em;
     font-size: 0.9rem;
   }
-  ul a:hover {
+  nav ul a:hover {
     background: none;
     text-decoration: underline;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: #e49797;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down-arrow {
+    stroke: #e49797;
+    position: unset;
+  }
+  section.hero svg.down-arrow path {
+    fill: #e49797;
   }
 }/*# sourceMappingURL=main.css.map */
