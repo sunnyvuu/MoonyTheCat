@@ -129,3 +129,42 @@ img {
     }
 
 }
+
+@media only screen and (min-width: 920px) {
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unfixed;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+
+        svg.close {
+            display: none;
+        }
+    }
+
+    ul {
+        position: static;
+        top: 0;
+        display: flex;
+        margin: 0;
+
+        a {
+            //font-weight: bold;
+            color: white;
+            padding: .5em 1.5em;
+            font-size: .9rem;
+
+            &:hover {
+                background: none;
+                text-decoration: underline;
+            }
+        }
+    }
+}
