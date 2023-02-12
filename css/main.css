@@ -20,6 +20,7 @@ a {
   height: 100vh;
   z-index: -1;
   filter: brightness(70%);
+  animation: introLoad 2s forwards;
 }
 
 .logo {
@@ -82,15 +83,18 @@ h1 {
 section.hero {
   color: white;
   height: 90vh;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
 }
-section.hero svg {
+section.hero .down-arrow {
   stroke: pink;
   fill: pink;
   position: absolute;
-  bottom: 2em;
+  bottom: 1em;
   width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
 }
-section.hero svg path {
+section.hero .down-arrow path {
   fill: white;
 }
 
@@ -167,6 +171,7 @@ img {
   section.hero svg.down-arrow {
     stroke: #e49797;
     position: unset;
+    margin-top: 2em;
   }
   section.hero svg.down-arrow path {
     fill: #e49797;
@@ -203,5 +208,32 @@ img {
   }
   .feature {
     gap: 0;
+  }
+}
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes moveArrow {
+  from {
+    transform: translateY(-25px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
