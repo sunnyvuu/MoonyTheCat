@@ -97,13 +97,22 @@ section.hero {
             fill: white;
         }
     }
+}
 
-    .more-info {
+.more-info {
 
-        img {
-            width: 100%;
-            object-fit: cover; 
-            height: 11em;
-        }
+    img {
+        width: 100%;
+        object-fit: cover; 
+        height: 11em;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    .desc {
+        line-height: 1.5rem;
     }
 }
