@@ -107,6 +107,7 @@ img {
     background-position-x: 50%;
     background-position-y: 50%;
 }
+
 .more-info {
     
     
@@ -118,4 +119,13 @@ img {
     .desc {
         line-height: 1.5rem;
     }
+}
+
+@media only screen and (min-width: 680px) {
+    
+    body {
+        margin: 1.5em 5em;
+        font-family: "Poppins";
+    }
+
 }
