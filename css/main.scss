@@ -89,7 +89,8 @@ section.hero {
     height: 90vh;
 
     svg {
-        stroke: white;
+        stroke: pink;
+        fill: pink;
         position: absolute;
         bottom: 2em;
         width: 1em;
@@ -127,7 +128,8 @@ img {
         margin: 1.5em 5em;
         font-family: "Poppins";
     }
-
+    
+ 
 }
 
 @media only screen and (min-width: 920px) {

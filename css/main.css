@@ -84,7 +84,8 @@ section.hero {
   height: 90vh;
 }
 section.hero svg {
-  stroke: white;
+  stroke: pink;
+  fill: pink;
   position: absolute;
   bottom: 2em;
   width: 1em;
