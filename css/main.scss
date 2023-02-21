@@ -19,7 +19,7 @@ a {
     width: 100%;
     height: 100vh;
     z-index: -1;
-    filter: brightness(70%);
+    filter: brightness(60%);
     animation: introLoad 2s forwards;
 }
 
@@ -87,9 +87,13 @@ h1 {
 
 section.hero {
     color: white;
-    height: 90vh;
+    height: 80vh;
     animation: moveDown 1s ease-in-out forwards;
     opacity: 0;
+
+    .subhead {
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
 
     .down-arrow {
         stroke: pink;
@@ -102,6 +106,7 @@ section.hero {
             fill: white;
         }
     }
+    margin-bottom: 4.5em;
 }
 
 img {
@@ -114,7 +119,10 @@ img {
 }
 
 .more-info {
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ 
     .title {
         font-weight: bold;
         font-size: 1.25rem;
