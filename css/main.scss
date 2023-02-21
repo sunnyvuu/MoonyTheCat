@@ -83,6 +83,7 @@ h1 {
 
 .subhead {
     font-size: 1.4rem; 
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 section.hero {
@@ -90,10 +91,6 @@ section.hero {
     height: 80vh;
     animation: moveDown 1s ease-in-out forwards;
     opacity: 0;
-
-    .subhead {
-        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    }
 
     .down-arrow {
         stroke: pink;
@@ -197,11 +194,17 @@ img {
         }
     }
 
+    .subhead {
+        text-shadow: revert;
+    }
+
     section.hero {
         color: black;
         height: auto;
         width: 40%;
         margin-bottom: 8em;
+
+        
 
         svg.down-arrow {
             stroke:#e49797;

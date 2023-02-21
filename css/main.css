@@ -78,6 +78,7 @@ h1 {
 
 .subhead {
   font-size: 1.4rem;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 section.hero {
@@ -86,9 +87,6 @@ section.hero {
   animation: moveDown 1s ease-in-out forwards;
   opacity: 0;
   margin-bottom: 4.5em;
-}
-section.hero .subhead {
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 section.hero .down-arrow {
   stroke: pink;
@@ -175,6 +173,9 @@ img {
   }
   .logo span {
     color: #e49797;
+  }
+  .subhead {
+    text-shadow: revert;
   }
   section.hero {
     color: black;
